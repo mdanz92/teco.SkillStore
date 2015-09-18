@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TabContentLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="25"
+        android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/Overlay"
+        android:background="@color/gray_overlay_shadow"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+            <ProgressBar
+                android:id="@+id/LoadingRotator"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:indeterminate="true"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/OverlayStatusText"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/gray_light"
+                android:layout_gravity="center_horizontal"
+                android:text="Status" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

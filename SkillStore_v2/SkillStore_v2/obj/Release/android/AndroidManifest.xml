@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="teco.SkillStore" android:versionCode="2" android:versionName="2.2" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="17" />
+  <application android:label="@string/ApplicationName" android:icon="@drawable/icon" android:debuggable="false" android:name="md577eb180064055c27894f17acb6c6ecfb.SkillStoreApplication">
+    <activity android:icon="@drawable/ic_action_about" android:label="@string/AboutTitle" android:launchMode="singleTask" android:parentActivityName="md577eb180064055c27894f17acb6c6ecfb.TabbedActivity" android:screenOrientation="portrait" android:theme="@style/SkillStore.Theme.Main.TabbedActivity" android:name="md511a61b7f0518f3bba15efbc3cdd69f3b.AboutActivity" />
+    <activity android:label="@string/ApplicationName" android:launchMode="singleTask" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/SkillStore.Theme.Application.Splash" android:name="md577eb180064055c27894f17acb6c6ecfb.SkillStoreSplashActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="@string/FeedbackTitle" android:launchMode="singleTask" android:parentActivityName="md577eb180064055c27894f17acb6c6ecfb.TabbedActivity" android:screenOrientation="portrait" android:theme="@style/SkillStore.Theme.Main.TabbedActivity" android:name="md541784391549712b7b934ee57608a1192.FeedbackActivity" />
+    <activity android:icon="@drawable/ic_action_help" android:label="@string/HelpTitle" android:launchMode="singleTask" android:parentActivityName="md577eb180064055c27894f17acb6c6ecfb.TabbedActivity" android:screenOrientation="portrait" android:theme="@style/SkillStore.Theme.Help.SlideShow" android:name="md5285f45540b8561612273d486058463d5.HelpActivity" />
+    <activity android:label="@string/ApplicationName" android:launchMode="singleTask" android:screenOrientation="portrait" android:theme="@style/SkillStore.Theme.Main.TabbedActivity" android:name="md577eb180064055c27894f17acb6c6ecfb.TabbedActivity" />
+    <service android:name="md554f820690157a93aa62a7080599b5060.ServerCommService">
+      <intent-filter>
+        <action android:name="Skillstore.Service.Communication.ServerCommService" />
+      </intent-filter>
+    </service>
+    <service android:name="md50dd9a1ea6cec4e69ac111f567e48bf8b.AudioRecorderService">
+      <intent-filter>
+        <action android:name="Skillstore.Service.AudioRecorder.AudioRecorderService" />
+      </intent-filter>
+    </service>
+    <service android:name="md515d084dca8ae2ee6860fb1e74170b178.StorageService">
+      <intent-filter>
+        <action android:name="Skillstore.Service.Storage.StorageService" />
+      </intent-filter>
+    </service>
+    <activity android:icon="@drawable/ic_action_settings" android:label="@string/SettingsTitle" android:parentActivityName="md577eb180064055c27894f17acb6c6ecfb.TabbedActivity" android:theme="@android:style/Theme.Holo.Light" android:name="md58c7e1fd763aba5e2ecbca18ccc9bcd49.SettingsActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="teco.SkillStore.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+</manifest>

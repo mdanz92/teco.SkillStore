@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">SkillStore</string>
+	<string name="ApplicationNameDebuggable">SkillStore-Debug</string>
+
+	<!--<string name="AnalysisServerAddress">http://192.168.178.29/SkillStoreServer/analyse.php</string>
+	<string name="AddInfoServerAddress">http://192.168.178.29/SkillStoreServer/add.php</string>-->
+	<!--<string name="AnalysisServerAddress">http://192.168.178.29:8080/backend/analyze</string>
+	<string name="AddInfoServerAddress">http://192.168.178.29:8080/backend/add</string>-->
+	<!--<string name="AnalysisServerAddress">http://BACKENDIP:8080/backend/analyze</string>
+	<string name="AddInfoServerAddress">http://BACKENDIP:8080/backend/add</string>-->
+	<!--<string name="AnalysisServerAddress">http://portal.teco.edu/SkillStoreServer/backend/analyze</string>
+	<string name="AddInfoServerAddress">http://portal.teco.edu/SkillStoreServer/backend/add</string>-->
+	<!--<string name="AnalysisServerAddress">http://91.226.88.226:8080/backend/analyze</string>
+	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backend/add</string>-->
+		<!--<string name="AnalysisServerAddress">http://91.226.88.226:8080/backendeasy/analyze</string>
+	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backendeasy/add</string>-->
+		<string name="AnalysisServerAddress">http://91.226.88.226:8080/backenddummy/analyze</string>
+	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backenddummy/add</string>
+	<string name="DateCulture">yyyyMMddHHmmss</string>	
+	<string name="PathOnDevice">"teco.skillstore/storage/"</string>
+	
+	
+	<!--Menu strings-->
+	<string name="ActionSettings">Settings</string>
+	<string name="ActionMenu">Menu</string>
+	<string name="ActionAbout">About</string>
+	<string name="ActionHelp">Help</string>
+
+	<!--Analyzer strings-->
+	<string name="AnalyzerTitle">Analyzer</string>
+	<string name="ResultText">Result:</string>
+	<string name="TryAgainButtonText">Try again</string>
+	<string name="LaterButtonText">Later</string>
+	<string name="FeedbackButtonText">Edit/Confirm</string>
+	<string name="StartButtonText">Start</string>
+	<string name="AnalysisSuccessful">analysis successful</string>
+
+	<!--History strings-->
+	<string name="HistoryTitle">History</string>
+	<string name="LoadingHistoryEntries">..loading History entries..</string>
+	<string name="EmptyListItem">Here you will see later all analyses you\'ve done so far. </string>
+	<string name="ReadFailedListItem">Failed loading this item.</string>
+	<string-array name="HistoryItemContextMenu">
+		<item>Edit</item>
+		<item>Delete</item>
+		<item>Clear History</item>
+	</string-array>
+	
+	<!--Settings strings-->
+	<string name="SettingsTitle">Settings</string>
+	<string name="ShowAgainText">Don\'t show the Manual again</string>
+	
+	<!--Help strings-->
+	<string name="HelpTitle">Help</string>
+	<string name="Slide1_Text1">Hold the egg as shown in the picture, next click \"Start\".</string>
+	<string name="Slide1_Text2">After a short countdown shake the egg near the microphone.</string>
+	<string name="Slide3_Text1">Here the result is presented to you.</string>
+	<string name="Slide3_Text2">Finally, edit or confirm the result to help making the classifier better, or do it later using the \"History\"-Tab.</string>
+	<string name="ManualIndicatorText">Manual</string>
+	
+	<!--Feedback strings-->
+	<string name="FeedbackTitle">Feedback</string>		
+	<string name="FeedbackFormTitle">What was actually in the egg?</string>
+	<string name="SelectPicture">Select Picture</string>
+	<string name="ClassDefaultText">Series</string>
+	<string name="TagsDefaultText">Tags</string>
+	<string name="NotesDefaultText">Notes</string>
+	<string name="OkButtonText">Ok</string>
+	<string name="CancelButtonText">Cancel</string>
+	<string name="SendButtonText">Send</string>
+	<string name="ClassHelpText">(required) Please add the series name to help us. You can find it on the package leaflet.</string>
+	<string name="TagsHelpText">(optional) You can add additional tags for this sample seperated by \",\"</string>
+	<string name="NotesHelpText">(optional) Add some notes to your feedback.</string>
+	<string name="PictureHelpText">(optional) By clicking the picture you can add a picture of the eggs content as additional feedback.</string>
+	<string name="PictureLoadFailed">Failed Loading Picture</string>
+	
+	<!--About strings-->
+	<string name="AboutTitle">About</string>
+	<string name="AuthorHeading"><b>Developers</b></string>
+	<string name="Author">Marcel Danz, Christian Voigt</string>
+	<string name="VersionHeading"><b>Version</b></string>
+	<string name="DescriptionHeading"><b>Description</b></string>
+	<string name="Description">SkillStore is an App to help amateurs perform acoustical expert skills. This particular version is the 
+														 Surprise Edition which will help you to figure out what is hidden in a \"Kinder Surprise Egg\". 
+														 SkillStore Surprise Edition was developed in cooperation with the TECO research group at the University of Karlsruhe (KIT),
+														 as part of a bachelor thesis about user interaction for acoustical object recognition via smartphone.</string>
+	
+	<!--Error recovery messages-->
+	<string name="RecordingFailedTip">Try again holding the egg nearer to the microphone at the bottom of the phone. And avoid loud environments or other things that could obscure the eggs sound (e.g. watch on your arm).</string>
+	<string name="NoNetworkConnectionTip">Couldn\'t connect to the internet, please make sure that you have internet connection, then try again.</string>
+	<string name="NoServerConnectionTip">Couldn\'t reach the server, please try again later. If the problem persists please contact the developers.</string>
+	<string name="SendingFailedTip">Please make sure you have stable internet connection. Then try it again.</string>
+	<string name="StoreFailedTip">please make sure there is enought space left on the device or SD card and try again.</string>
+	<string name="WriteFailedTip">Couldn\'t write to storage. Please make sure there is enought space left on the device or SD card and try again.</string>
+	<string name="ReadFailedTip">Couldn\'t read the storage. Please make sure SkillStore has the rights to access this data and try again.</string>
+	<string name="DataNotFoundTip">There is no data with the given ID on this device.</string>
+	<string name="PictureLoadFailedTip">Please make sure SkillStore has the rights to access this data and try again.</string>
+	<string name="CheckFailedTip">The recorded samples were too different. Please make sure you shake all three times and that the sound of the egg is loud enough.</string>
+	<string name="DeleteFailedTip">Data doesn\'t exist or access was denied. Please make sure SkillStore has the rights to access this data and try again.</string>
+	<string name="RecorderInitializationErrorTip">Try again. When this error persists, restart the app.</string>
+
+	<string name="RecordingFailedTitle">Recording Failed</string>
+	<string name="NoNetworkConnectionTitle">No Network Connection</string>
+	<string name="NoServerConnectionTitle">No Server Connection</string>
+	<string name="SendingFailedTitle">Sending Failed</string>
+	<string name="StoreFailedTitle">Store Failed</string>
+	<string name="WriteFailedTitle">Write Failed</string>
+	<string name="ReadFailedTitle">Read Failed</string>
+	<string name="DataNotFoundTitle">Data Not Found</string>
+	<string name="PictureLoadFailedTitle">Picture Load Failed</string>
+	<string name="CheckFailedTitle">Check Failed</string>
+	<string name="DeleteFailedTitle">Delete Failed</string>
+	<string name="RecorderInitializationErrorTitle">Recorder Initialization Failed</string>
+
+	<!--Status messages-->
+	<string name="StartingAudioRecorderService">..starting AudioRecorderService..</string>
+	<string name="PreparingAudioRecorderService">Ready...</string>
+	<string name="UpdatePrepareCounter">..prepare counter updated..</string>
+	<string name="FinishedPreparingAudioRecorderService">..finished preparing AudioRecorderService..</string>
+	<string name="Recording">Shake!</string>
+	<string name="UpdateRecordingCounter">..recording counter updated..</string>
+	<string name="StoppedRecording">..stopped recording..</string>
+	<string name="RecordingFailed">..recording failed..</string>
+	<string name="RecordingSuccessful">..recording was successful..</string>
+	<string name="AudioRecorderStopped">..AudioRecorderService stopped..</string>
+	<string name="CheckFailed">..sample check failed..</string>
+	<string name="CheckSuccessful">..samples are similar..</string>
+	<string name="CheckingSamples">..evaluating samples..</string>
+	<string name="RecorderInitializationError">..error initializing WavRecorder..</string>
+
+	<string name="StartingServerCommService">..starting ServerCommService..</string>
+	<string name="NetworkConnected">..network connected..</string>
+	<string name="NoNetworkConnection">..no network connection..</string>
+	<string name="SendingFailed">..sending failed..</string>
+	<string name="WaitingForResponse">..waiting for response..</string>
+	<string name="NoServerConnection">..no server connection..</string>
+	<string name="SendingSuccessful">..sending was successful..</string>
+	<string name="ServerCommServiceStopped">..ServerCommService stopped..</string>
+
+	<string name="StoreFailed">..failed to store data..</string>
+	<string name="StorageServiceStopped">..StorageService stopped..</string>
+	<string name="WriteFailed">..write failed..</string>
+	<string name="ReadFailed">..read failed..</string>
+	<string name="ReadSuccessful">..read was successful..</string>
+	<string name="WriteSuccessful">..write was successful..</string>
+	<string name="StartingStorageService">..starting StorageService..</string>
+	<string name="StoreSuccessful">..successfuly stored data..</string>
+	<string name="DataFound">..data found..</string>
+	<string name="DataNotFound">..data not found..</string>
+	<string name="NoDataStored">..no data stored..</string>
+	<string name="DeleteFailed">..delete failed..</string>
+	<string name="DeleteSuccessful">..delete was successful..</string>
+	
+	
+</resources>

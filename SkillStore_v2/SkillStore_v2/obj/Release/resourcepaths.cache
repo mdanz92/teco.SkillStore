@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <AdditionalAndroidResourcePaths>C:\Users\Drunken Ninja\AppData\Local\Xamarin\Android.Support.v13\22.1.1\embedded;C:\Users\Drunken Ninja\AppData\Local\Xamarin\Android.Support.v4\22.1.1\embedded</AdditionalAndroidResourcePaths>
+  <AdditionalJavaLibraryReferences>C:\Users\Drunken Ninja\AppData\Local\Xamarin\Android.Support.v13\22.1.1\embedded\classes.jar;C:\Users\Drunken Ninja\AppData\Local\Xamarin\Android.Support.v13\22.1.1\embedded\libs\internal_impl-22.1.1.jar;C:\Users\Drunken Ninja\AppData\Local\Xamarin\Android.Support.v4\22.1.1\embedded\classes.jar;C:\Users\Drunken Ninja\AppData\Local\Xamarin\Android.Support.v4\22.1.1\embedded\libs\internal_impl-22.1.1.jar</AdditionalJavaLibraryReferences>
+  <AdditionalNativeLibraryReferences></AdditionalNativeLibraryReferences>
+</Paths>
