@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CE536FD-DE9E-4552-9840-272B536C2D67}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SkillStore</RootNamespace>
+    <AssemblyName>SkillStore</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>False</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>True</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <DevInstrumentationEnabled>False</DevInstrumentationEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Math.2.2.5\lib\AForge.Math.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.v13, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v13.22.1.1.1\lib\MonoAndroid32\Xamarin.Android.Support.v13.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About\AboutActivity.cs" />
+    <Compile Include="Error\ErrorPopUpFactory.cs" />
+    <Compile Include="Error\IErrorPopUpDismissListener.cs" />
+    <Compile Include="Main\SkillStoreApplication.cs" />
+    <Compile Include="Main\SkillStoreSplashActivity.cs" />
+    <Compile Include="Feedback\FeedbackActivity.cs" />
+    <Compile Include="Feedback\HelpPopUp.cs" />
+    <Compile Include="Main\TabbedActivity.cs" />
+    <Compile Include="Main\Views\AnalyzerTabFragment.cs" />
+    <Compile Include="Main\Views\HistoryItemAdapter.cs" />
+    <Compile Include="Main\Views\HistoryTabFragment.cs" />
+    <Compile Include="Main\Views\TabFragmentAdapter.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Communication\ServerCommBinder.cs" />
+    <Compile Include="Service\Communication\ServerCommEventArgs.cs" />
+    <Compile Include="Service\Communication\ServerCommService.cs" />
+    <Compile Include="Service\Communication\ServerConnection.cs" />
+    <Compile Include="Service\ISkillStoreServiceConnectable.cs" />
+    <Compile Include="Service\Recorder\AudioRecorderBinder.cs" />
+    <Compile Include="Service\Recorder\AudioRecorderConnection.cs" />
+    <Compile Include="Service\Recorder\AudioRecorderEventArgs.cs" />
+    <Compile Include="Service\Recorder\AudioRecorderService.cs" />
+    <Compile Include="Service\Recorder\SampleEvaluator\SampleEvaluator.cs" />
+    <Compile Include="Service\ServiceConnection.cs" />
+    <Compile Include="Service\Storage\StorageBinder.cs" />
+    <Compile Include="Service\Storage\StorageConnection.cs" />
+    <Compile Include="Service\Storage\StorageEventArgs.cs" />
+    <Compile Include="Service\Storage\StorageService.cs" />
+    <Compile Include="Settings\SettingsActivity.cs" />
+    <Compile Include="Settings\Views\SettingsFragment.cs" />
+    <Compile Include="Service\Recorder\AudioRecorderStatus.cs" />
+    <Compile Include="SummativeEval\EggMapper.cs" />
+    <Compile Include="SummativeEval\ResultFaker.cs" />
+    <Compile Include="Utility\DataObject.cs" />
+    <Compile Include="Utility\ErrorType.cs" />
+    <Compile Include="Feedback\HelpPopUpType.cs" />
+    <Compile Include="Main\Views\HistoryItemContextMenuItemType.cs" />
+    <Compile Include="Utility\OneShotTimer.cs" />
+    <Compile Include="Service\Communication\PostType.cs" />
+    <Compile Include="Utility\Response.cs" />
+    <Compile Include="Service\Storage\StorageRequestType.cs" />
+    <Compile Include="WavFileReader\WavRecorderState.cs" />
+    <Compile Include="WavFileReader\SampleRates.cs" />
+    <Compile Include="Service\Communication\ServerStatus.cs" />
+    <Compile Include="Utility\SettingsKey.cs" />
+    <Compile Include="Utility\SkillStoreTabState.cs" />
+    <Compile Include="Service\Storage\StorageStatus.cs" />
+    <Compile Include="Utility\ActivityRequestCode.cs" />
+    <Compile Include="WavFileReader\WavFile.cs" />
+    <Compile Include="WavFileReader\WavRecorder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\TabbedLayout.axml" />
+    <AndroidResource Include="Resources\layout\SettingsActivityLayout.axml" />
+    <AndroidResource Include="Resources\layout\HelpActivityLayout.axml" />
+    <AndroidResource Include="Resources\layout\AnalyzerTabFragment.axml" />
+    <AndroidResource Include="Resources\layout\FeedbackActivityLayout.axml" />
+    <AndroidResource Include="Resources\layout\HelpPopUpLayout.axml" />
+    <AndroidResource Include="Resources\layout\HistoryTabFragment.axml" />
+    <AndroidResource Include="Resources\layout\HistoryItem.axml" />
+    <AndroidResource Include="Resources\layout\EmptyHistoryItem.axml" />
+    <AndroidResource Include="Resources\layout\ReadFailedHistoryItem.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AboutActivityLayout.axml" />
+    <AndroidResource Include="Resources\layout\SplashActivityLayout.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <AndroidResource Include="Resources\menu\tabbed_activity_actions.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_help.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_help.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_help.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_help.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_about.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_overflow.png" />
+    <AndroidResource Include="Resources\xml\Preferences.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_previous_item.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_next_item.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_next_item.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_next_item.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_next_item.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_accept.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_accept.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_accept.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_accept.png" />
+    <AndroidResource Include="Resources\values\Themes.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\Color.xml" />
+    <AndroidResource Include="Resources\drawable\RoundCornerButtonBackground.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\RoundBackground.xml" />
+    <AndroidResource Include="Resources\drawable\progress_seekbar_green.xml" />
+    <AndroidResource Include="Resources\drawable\progress_seekbar_red.xml" />
+    <AndroidResource Include="Resources\drawable\progress_seekbar_yellow.xml" />
+    <AndroidResource Include="Resources\drawable\thumb_green.xml" />
+    <AndroidResource Include="Resources\drawable\thumb_red.xml" />
+    <AndroidResource Include="Resources\drawable\thumb_yellow.xml" />
+    <AndroidResource Include="Resources\anim\ShakeAnimation.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\anim\TenTimes_CycleInterpolator.xml" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_camera.png" />
+    <AndroidResource Include="Resources\anim\HelpPopUpFloatingAnimation.xml" />
+    <AndroidResource Include="Resources\drawable\HelpPopUpBackground.xml" />
+    <AndroidResource Include="Resources\drawable\arrow.xml" />
+    <AndroidResource Include="Resources\drawable\RoundButtonBackground.xml" />
+    <AndroidResource Include="Resources\drawable\dummy_preview_picture.png" />
+    <AndroidResource Include="Resources\drawable\preview_sample.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\HandHoldingEgg_background.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\HandHoldingEgg_side_right_003.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\HandHoldingEgg_side_right_transparent.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\HandHoldingEgg_background.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\HandHoldingEgg_side_right_003.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\HandHoldingEgg_side_right_transparent.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\HandHoldingEgg_background.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\HandHoldingEgg_side_right_003.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\HandHoldingEgg_side_right_transparent.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\HandHoldingEgg_background.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\HandHoldingEgg_side_right_003.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\HandHoldingEgg_side_right_transparent.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Splash.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Splash.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Splash.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Splash.png" />
+    <AndroidResource Include="Resources\drawable\Splash.png" />
+    <AndroidResource Include="Resources\drawable\PreviewSample.png" />
+    <AndroidResource Include="Resources\values-de\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\HoldingSmartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\HoldingEggLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\HoldingSmartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\HoldingEggLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\HoldingSmartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\HoldingEggLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\HoldingEggLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\HoldingSmartphone.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

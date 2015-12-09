@@ -84,6 +84,7 @@ class MonoPackageManager_Resources {
 		"AForge.Math.dll",
 		"Xamarin.Android.Support.v13.dll",
 		"Xamarin.Android.Support.v4.dll",
+		"System.ServiceModel.Internals.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
