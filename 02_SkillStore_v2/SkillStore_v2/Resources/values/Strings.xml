@@ -11,12 +11,13 @@
 	<string name="AddInfoServerAddress">http://BACKENDIP:8080/backend/add</string>-->
 	<!--<string name="AnalysisServerAddress">http://portal.teco.edu/SkillStoreServer/backend/analyze</string>
 	<string name="AddInfoServerAddress">http://portal.teco.edu/SkillStoreServer/backend/add</string>-->
-	<!--<string name="AnalysisServerAddress">http://91.226.88.226:8080/backend/analyze</string>
-	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backend/add</string>-->
 		<!--<string name="AnalysisServerAddress">http://91.226.88.226:8080/backendeasy/analyze</string>
 	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backendeasy/add</string>-->
-		<string name="AnalysisServerAddress">http://91.226.88.226:8080/backenddummy/analyze</string>
-	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backenddummy/add</string>
+		<!--<string name="AnalysisServerAddress">http://91.226.88.226:8080/backenddummy/analyze</string>
+	<string name="AddInfoServerAddress">http://91.226.88.226:8080/backenddummy/add</string>-->
+	<string name="AnalysisServerAddress">http://eggshake.teco.edu:8080/backend/analyze</string>
+	<string name="AddInfoServerAddress">http://eggshake.teco.edu:8080/backend/add</string>
+	
 	<string name="DateCulture">yyyyMMddHHmmss</string>	
 	<string name="PathOnDevice">"teco.skillstore/storage/"</string>
 	
