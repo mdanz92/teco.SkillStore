@@ -191,6 +191,10 @@ namespace SkillStore.Service.Communication
 				}
 				form.Add(new ByteArrayContent(buffer), "audio", _data.AudioName);
 
+				//////////// Summative study ResultFaker ////////////////////////////
+				form.Add(new StringContent(Android.Provider.Settings.Secure.GetString(_service.ContentResolver, Android.Provider.Settings.Secure.AndroidId)), "notes");
+				/////////////////////////////////////////////////////////////////////
+
 				IsWaitingForResponse = true;
 				_service.WaitingForResponse();
 				var response = await webClient.PostAsync(_analysisUri, form);

@@ -407,7 +407,7 @@ namespace SkillStore.Main
 				if (SkillStoreApplication.StoredData != null) CurrentData = SkillStoreApplication.StoredData;
 				lock (_fragmentLock)
 				{
-					((AnalyzerTabFragment) _currentFragment).ShowResultViews(this, CurrentData.Class, SkillStoreApplication.IsHelpRequired);
+					((AnalyzerTabFragment)_currentFragment).ShowResultViews(this, CurrentData.Notes, SkillStoreApplication.IsHelpRequired); // TODO Change Notes back to Class
 				}
 			}
 			else
@@ -951,7 +951,7 @@ namespace SkillStore.Main
 				{
 					((AnalyzerTabFragment) _currentFragment).AnalyzerFailed = true;
 				}
-				((AnalyzerTabFragment) _currentFragment).ShowResultViews(this, CurrentData.Class, SkillStoreApplication.IsHelpRequired);
+				((AnalyzerTabFragment)_currentFragment).ShowResultViews(this, CurrentData.Notes, SkillStoreApplication.IsHelpRequired);	//TODO change CurrentData.Notes back to Class
 			}
 
 			ToggleKeepScreenOn(false);
